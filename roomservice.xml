@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remove-project name="LineageOS/android_packages_apps_Trebuchet" />
+  <remove-project name="LineageOS/android_packages_apps_DeskClock" />
+
+  <project name="LineageOS/android_device_qcom_common" path="device/qcom/common" remote="github" />
+  <project name="Oreo-onyx/device_oppo_common" path="device/oppo/common" remote="github" />
+  <project name="Omni-onyx/android_packages_apps_OmniClock" path="packages/apps/OmniClock" remote="github" revision="android-7.1" />
+  <project name="Oreo-onyx/hardware_qcom_camera" path="hardware/qcom/camera" remote="github" />
+
+  <project name="YumeMichi/proprietary_vendor_oneplus" path="vendor/oneplus" remote="github" />
+  <project name="Oreo-onyx/device_oneplus_onyx" path="device/oneplus/onyx" remote="github" />
+  <project name="YumeMichi/kernel_oneplus_onyx" path="kernel/oneplus/onyx" remote="github" />
+
+  <remove-project name="LineageOS/android_external_toybox" />
+  <project name="Oreo-onyx/external_toybox" path="external/toybox" remote="github" />
+  <remove-project name="LineageOS/android_external_mksh" />
+  <project name="Oreo-onyx/external_mksh" path="external/mksh" remote="github" />
+  <remove-project name="LineageOS/android_hardware_qcom_fm" />
+  <project name="Oreo-onyx/hardware_qcom_fm" path="hardware/qcom/fm" remote="github" />
+  <remove-project name="LineageOS/android_hardware_qcom_keymaster" />
+  <project name="Oreo-onyx/hardware_qcom_keymaster" path="hardware/qcom/keymaster" remote="github" />
+  <remove-project name="LineageOS/android_hardware_qcom_wlan" />
+  <project name="Oreo-onyx/hardware_qcom_wlan" path="hardware/qcom/wlan-caf" remote="github" revision="lineage-15.0-caf" />
+  <remove-project name="LineageOS/android_hardware_interfaces" />
+  <project name="Oreo-onyx/hardware_interfaces" path="hardware/interfaces" remote="github" />
+  <remove-project name="LineageOS/android_frameworks_base" />
+  <project name="Oreo-onyx/frameworks_base" path="frameworks/base" remote="github" />
+  <remove-project name="LineageOS/android_frameworks_native" />
+  <project name="Oreo-onyx/frameworks_native" path="frameworks/native" remote="github" />
+  <remove-project name="LineageOS/android_vendor_qcom_opensource_dataservices" />
+  <project name="Oreo-onyx/vendor_qcom_opensource_dataservices" path="vendor/qcom/opensource/dataservices" remote="github" />
+  <remove-project name="LineageOS/android_vendor_lineage" />
+  <project name="Oreo-onyx/vendor_lineage" path="vendor/lineage" remote="github" />
+  <remove-project name="LineageOS/android_system_bt" />
+  <project name="Oreo-onyx/system_bt" path="system/bt" remote="github" />
+  <remove-project name="LineageOS/android_system_sepolicy" />
+  <project name="Oreo-onyx/system_sepolicy" path="system/sepolicy" remote="github" />
+  <remove-project name="LineageOS/android_system_core" />
+  <project name="Oreo-onyx/system_core" path="system/core" remote="github" />
+  <remove-project name="LineageOS/android_system_vold" />
+  <project name="Oreo-onyx/system_vold" path="system/vold" remote="github" />
+  <remove-project name="LineageOS/android_packages_apps_FMRadio" />
+  <project name="Oreo-onyx/packages_apps_FMRadio" path="packages/apps/FMRadio" remote="github" />
+  <remove-project name="LineageOS/android_packages_apps_Gallery2" />
+  <project name="Oreo-onyx/packages_apps_Gallery2" path="packages/apps/Gallery2" remote="github" revision="aosp-8.0.0" />
+  <remove-project name="LineageOS/android_packages_apps_Camera2" />
+  <project name="Oreo-onyx/packages_apps_Camera2" path="packages/apps/Camera2" remote="github" revision="aosp-8.0.0" />
+  <remove-project name="LineageOS/android_frameworks_av" />
+  <project name="Oreo-onyx/frameworks_av" path="frameworks/av" remote="github" />
+  <remove-project name="LineageOS/android_build_soong" />
+  <project name="Oreo-onyx/build_soong" path="build/soong" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <remove-project name="LineageOS/android_build" />
+  <project name="Oreo-onyx/build_make" path="build/make" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <remove-project name="LineageOS/android_bionic" />
+  <project name="Oreo-onyx/bionic" path="bionic" remote="github" />
+
+</manifest>
