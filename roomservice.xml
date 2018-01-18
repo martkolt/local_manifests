@@ -14,15 +14,16 @@
   <remove-project name="platform/frameworks/av" />
   <remove-project name="platform/frameworks/base" />
   <remove-project name="platform/frameworks/native" />
-  <remove-project name="platform/frameworks/opt/datetimepicker" />
   <remove-project name="platform/hardware/qcom/audio" />
+  <remove-project name="platform/hardware/qcom/bt" />
   <remove-project name="platform/hardware/qcom/camera" />
   <remove-project name="platform/hardware/qcom/display" />
   <remove-project name="platform/hardware/qcom/media" />
   <remove-project name="platform/hardware/qcom/power" />
   <remove-project name="platform/hardware/qcom/wlan" />
+  <remove-project name="platform/hardware/ril" />
   <remove-project name="platform/packages/apps/Calendar" />
-  <remove-project name="platform/packages/apps/ExactCalculator" />
+  <remove-project name="platform/packages/apps/DeskClock" />
   <remove-project name="platform/packages/apps/Gallery2" />
   <remove-project name="platform/packages/apps/Launcher3" />
   <remove-project name="platform/packages/apps/Messaging" />
@@ -62,11 +63,14 @@
   <project name="Oreo-onyx/hardware_qcom_media" path="hardware/qcom/media-caf-msm8974" remote="github" revision="o-mr1-caf" />
   <project name="Oreo-onyx/hardware_qcom_display" path="hardware/qcom/display-caf-msm8974" remote="github" revision="o-mr1-caf" />
   <project name="Oreo-onyx/hardware_qcom_camera" path="hardware/qcom/camera" remote="github" revision="o-mr1-sultan" />
+  <project name="Oreo-onyx/hardware_qcom_bt" path="hardware/qcom/bt" remote="github" revision="o-mr1-caf" />
   <project name="Oreo-onyx/hardware_qcom_fm" path="hardware/qcom/fm" remote="github" />
   <project name="Oreo-onyx/hardware_qcom_power" path="hardware/qcom/power" remote="github" />
-  <project name="Oreo-onyx/hardware_qcom_wlan" path="hardware/qcom/wlan" remote="github" />
-  <project name="Oreo-onyx/packages_apps_FMRadio" path="packages/apps/FMRadio" remote="github" revision="aosp-8.0.0" />
+  <project name="Oreo-onyx/hardware_qcom_wlan" path="hardware/qcom/wlan" remote="github" revision="o-mr1-caf" />
+  <project name="Oreo-onyx/hardware_ril" path="hardware/ril" remote="github" revision="o-mr1-caf" />
+  <project name="Oreo-onyx/packages_apps_Calendar" path="packages/apps/Calendar" remote="github" />
   <project name="Oreo-onyx/packages_apps_Gallery2" path="packages/apps/Gallery2" remote="github" />
+  <project name="Oreo-onyx/packages_apps_Messaging" path="packages/apps/Messaging" remote="github" />
   <project name="Oreo-onyx/packages_apps_OmniGears" path="packages/apps/OmniGears" remote="github" />
   <project name="Oreo-onyx/packages_apps_Settings" path="packages/apps/Settings" remote="github" />
   <project name="Oreo-onyx/packages_apps_Snap" path="packages/apps/Snap" remote="github" />
@@ -82,14 +86,6 @@
   <project name="YumeMichi/proprietary_vendor_oneplus" path="vendor/oneplus" remote="github" />
   <project name="sultanxda/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="github" revision="cm-13.0" />
 
-  <!-- CypherOS repos -->
-  <project name="CypherOS/frameworks_opt_datetimepicker" path="frameworks/opt/datetimepicker" remote="github" revision="oreo-mr1-release" />
-  <project name="CypherOS/packages_apps_Calculator" path="packages/apps/ExactCalculator" remote="github" revision="oreo-mr1-release" />
-  <project name="CypherOS/packages_apps_Calendar" path="packages/apps/Calendar" remote="github" revision="oreo-mr1-release" />
-  <project name="CypherOS/packages_apps_Messaging" path="packages/apps/Messaging" remote="github" revision="oreo-mr1-release" />
-
-  <project name="ezio84/abc_packages_apps_Launcher3" path="packages/apps/Launcher3" remote="github" revision="o2" />
-
   <!-- LineageOS repos -->
   <project name="LineageOS/android_external_exfat" path="external/exfat" remote="github" revision="staging/lineage-15.1" />
   <project name="LineageOS/android_external_fuse" path="external/fuse" remote="github" revision="staging/lineage-15.1" />
@@ -100,11 +96,14 @@
   <project name="LineageOS/android_external_vim" path="external/vim" remote="github" revision="staging/lineage-15.1" />
   <project name="LineageOS/android_external_zip" path="external/zip" remote="github" revision="staging/lineage-15.1" />
   <project name="LineageOS/android_hardware_lineage_interfaces" path="hardware/lineage/interfaces" remote="github" revision="staging/lineage-15.1" />
+  <project name="LineageOS/android_packages_apps_FMRadio" path="packages/apps/FMRadio" remote="github" revision="staging/lineage-15.1" />
+  <project name="LineageOS/android_packages_apps_Jelly" path="packages/apps/Jelly" remote="github" revision="staging/lineage-15.1" />
 
   <!-- OmniROM repos -->
   <project name="omnirom/android_external_mksh" path="external/mksh" remote="github" revision="android-8.1" />
   <project name="omnirom/android_external_toybox" path="external/toybox" remote="github" revision="android-8.1" />
   <project name="omnirom/android_packages_apps_DSPManager" path="packages/apps/DSPManager" remote="github" revision="android-8.1" />
+  <project name="omnirom/android_packages_apps_Launcher3" path="packages/apps/Launcher3" remote="github" revision="android-8.1" />
   <project name="omnirom/android_packages_apps_MusicFX" path="packages/apps/MusicFX" remote="github" revision="android-8.1" />
   <project name="omnirom/android_packages_apps_OmniClock" path="packages/apps/OmniClock" remote="github" revision="android-8.1" />
   <project name="omnirom/android_packages_apps_OmniSwitch" path="packages/apps/OmniSwitch" remote="github" revision="android-8.1" />
