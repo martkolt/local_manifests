@@ -75,7 +75,6 @@
   <project name="Oreo-onyx/system_vold" path="system/vold" remote="github" />
   <project name="Oreo-onyx/vendor_qcom_opensource_dataservices" path="vendor/qcom/opensource/dataservices" remote="github" />
   <project name="Oreo-onyx/vendor_qcom_opensource_interfaces" path="vendor/qcom/opensource/interfaces" remote="github" />
-  <project name="Oreo-onyx/vendor_qcom_opensource_location" path="vendor/qcom/opensource/location" remote="github" />
 
   <!-- Device specific repos -->
   <project name="YumeMichi/device_oneplus_onyx" path="device/oneplus/onyx" remote="github" />
