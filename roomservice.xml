@@ -59,13 +59,9 @@
   <project name="Oreo-onyx/frameworks_av" path="frameworks/av" remote="github" />
   <project name="Oreo-onyx/frameworks_base" path="frameworks/base" remote="github" />
   <project name="Oreo-onyx/frameworks_native" path="frameworks/native" remote="github" />
-  <project name="Oreo-onyx/hardware_qcom_audio" path="hardware/qcom/audio-caf-msm8974" remote="github" revision="o-mr1-caf" />
-  <project name="Oreo-onyx/hardware_qcom_media" path="hardware/qcom/media-caf-msm8974" remote="github" revision="o-mr1-caf" />
-  <project name="Oreo-onyx/hardware_qcom_display" path="hardware/qcom/display-caf-msm8974" remote="github" revision="o-mr1-caf" />
   <project name="Oreo-onyx/hardware_qcom_camera" path="hardware/qcom/camera" remote="github" revision="o-mr1-sultan" />
   <project name="Oreo-onyx/hardware_qcom_bt" path="hardware/qcom/bt" remote="github" revision="o-mr1-caf" />
   <project name="Oreo-onyx/hardware_qcom_fm" path="hardware/qcom/fm" remote="github" />
-  <project name="Oreo-onyx/hardware_qcom_power" path="hardware/qcom/power" remote="github" />
   <project name="Oreo-onyx/hardware_qcom_wlan" path="hardware/qcom/wlan" remote="github" revision="o-mr1-caf" />
   <project name="Oreo-onyx/hardware_ril" path="hardware/ril" remote="github" revision="o-mr1-caf" />
   <project name="Oreo-onyx/packages_apps_Calendar" path="packages/apps/Calendar" remote="github" />
@@ -79,10 +75,11 @@
   <project name="Oreo-onyx/system_vold" path="system/vold" remote="github" />
   <project name="Oreo-onyx/vendor_qcom_opensource_dataservices" path="vendor/qcom/opensource/dataservices" remote="github" />
   <project name="Oreo-onyx/vendor_qcom_opensource_interfaces" path="vendor/qcom/opensource/interfaces" remote="github" />
+  <project name="Oreo-onyx/vendor_qcom_opensource_location" path="vendor/qcom/opensource/location" remote="github" />
 
   <!-- Device specific repos -->
   <project name="YumeMichi/device_oneplus_onyx" path="device/oneplus/onyx" remote="github" />
-  <project name="YumeMichi/kernel_oneplus_onyx" path="kernel/oneplus/onyx" remote="github" revision="o-mr1-new" />
+  <project name="YumeMichi/kernel_oneplus_onyx" path="kernel/oneplus/onyx" remote="github" revision="sdcardfs" />
   <project name="YumeMichi/proprietary_vendor_oneplus" path="vendor/oneplus" remote="github" />
   <project name="sultanxda/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="github" revision="cm-13.0" />
 
@@ -96,6 +93,10 @@
   <project name="LineageOS/android_external_vim" path="external/vim" remote="github" revision="staging/lineage-15.1" />
   <project name="LineageOS/android_external_zip" path="external/zip" remote="github" revision="staging/lineage-15.1" />
   <project name="LineageOS/android_hardware_lineage_interfaces" path="hardware/lineage/interfaces" remote="github" revision="staging/lineage-15.1" />
+  <project name="LineageOS/android_hardware_qcom_audio" path="hardware/qcom/audio-caf-msm8974" remote="github" revision="staging/lineage-15.1-caf-8974" />
+  <project name="LineageOS/android_hardware_qcom_display" path="hardware/qcom/display-caf-msm8974" remote="github" revision="staging/lineage-15.1-caf-8974" />
+  <project name="LineageOS/android_hardware_qcom_media" path="hardware/qcom/media-caf-msm8974" remote="github" revision="staging/lineage-15.1-caf-8974" />
+  <project name="LineageOS/android_hardware_qcom_power" path="hardware/qcom/power" remote="github" revision="staging/lineage-15.1" />
   <project name="LineageOS/android_packages_apps_FMRadio" path="packages/apps/FMRadio" remote="github" revision="staging/lineage-15.1" />
   <project name="LineageOS/android_packages_apps_Jelly" path="packages/apps/Jelly" remote="github" revision="staging/lineage-15.1" />
 
