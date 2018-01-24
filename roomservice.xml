@@ -14,6 +14,7 @@
   <remove-project name="platform/frameworks/av" />
   <remove-project name="platform/frameworks/base" />
   <remove-project name="platform/frameworks/native" />
+  <remove-project name="platform/frameworks/opt/net/ims" />
   <remove-project name="platform/frameworks/opt/net/wifi" />
   <remove-project name="platform/frameworks/opt/telephony" />
   <remove-project name="platform/hardware/qcom/audio" />
@@ -58,7 +59,6 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-  <project name="Oreo-onyx/device_qcom_sepolicy" path="device/qcom/sepolicy" remote="github" />
   <project name="Oreo-onyx/external_ant-wireless_ant_native" path="external/ant-wireless/ant_native" remote="github" />
   <project name="Oreo-onyx/external_ant-wireless_ant_service" path="external/ant-wireless/ant_service" remote="github" />
   <project name="Oreo-onyx/external_ant-wireless_antradio-library" path="external/ant-wireless/antradio-library" remote="github" />
@@ -91,6 +91,7 @@
   <project name="sultanxda/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="github" revision="cm-13.0" />
 
   <!-- LineageOS repos -->
+  <project name="LineageOS/android_device_qcom_sepolicy" path="device/qcom/sepolicy" remote="github" revision="staging/lineage-15.1" />
   <project name="LineageOS/android_external_exfat" path="external/exfat" remote="github" revision="staging/lineage-15.1" />
   <project name="LineageOS/android_external_fuse" path="external/fuse" remote="github" revision="staging/lineage-15.1" />
   <project name="LineageOS/android_external_htop" path="external/htop" remote="github" revision="staging/lineage-15.1" />
@@ -119,6 +120,7 @@
 
   <!-- DirtyUnicorns repos -->
   <project name="DirtyUnicorns/android_external_ebtables" path="external/ebtables" remote="github" revision="o8x-caf" />
+  <project name="DirtyUnicorns/android_frameworks_opt_net_ims" path="frameworks/opt/net/ims" remote="github" revision="o8x-caf" />
   <project name="DirtyUnicorns/android_frameworks_opt_net_wifi" path="frameworks/opt/net/wifi" remote="github" revision="o8x-caf" />
   <project name="DirtyUnicorns/android_frameworks_opt_telephony" path="frameworks/opt/telephony" remote="github" revision="o8x-caf" />
   <project name="DirtyUnicorns/android_packages_apps_CellBroadcastReceiver" path="packages/apps/CellBroadcastReceiver" remote="github" revision="o8x" />
