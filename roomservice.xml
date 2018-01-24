@@ -26,11 +26,13 @@
   <remove-project name="platform/hardware/qcom/wlan" />
   <remove-project name="platform/hardware/ril" />
   <remove-project name="platform/packages/apps/Calendar" />
+  <remove-project name="platform/packages/apps/CellBroadcastReceiver" />
   <remove-project name="platform/packages/apps/DeskClock" />
   <remove-project name="platform/packages/apps/Gallery2" />
   <remove-project name="platform/packages/apps/Launcher3" />
   <remove-project name="platform/packages/apps/Messaging" />
   <remove-project name="platform/packages/apps/MusicFX" />
+  <remove-project name="platform/packages/apps/PhoneCommon" />
   <remove-project name="platform/packages/apps/Settings" />
   <remove-project name="platform/packages/services/Telecomm" />
   <remove-project name="platform/packages/services/Telephony" />
@@ -120,6 +122,8 @@
   <project name="DirtyUnicorns/android_external_ebtables" path="external/ebtables" remote="github" revision="o8x-caf" />
   <project name="DirtyUnicorns/android_frameworks_opt_net_wifi" path="frameworks/opt/net/wifi" remote="github" revision="o8x-caf" />
   <project name="DirtyUnicorns/android_frameworks_opt_telephony" path="frameworks/opt/telephony" remote="github" revision="o8x-caf" />
+  <project name="DirtyUnicorns/android_packages_apps_CellBroadcastReceiver" path="packages/apps/CellBroadcastReceiver" remote="github" revision="o8x-caf" />
+  <project name="DirtyUnicorns/android_packages_apps_PhoneCommon" path="packages/apps/PhoneCommon" remote="github" revision="o8x-caf" />
   <project name="DirtyUnicorns/android_packages_services_Telecomm" path="packages/services/Telecomm" remote="github" revision="o8x-caf" />
   <project name="DirtyUnicorns/android_packages_services_Telephony" path="packages/services/Telephony" remote="github" revision="o8x-caf" />
   <project name="DirtyUnicorns/android_system_hwservicemanager" path="system/hwservicemanager" remote="github" revision="o8x-caf" />
