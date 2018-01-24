@@ -8,12 +8,15 @@
   <!-- Repos to replace -->
   <remove-project name="platform/build" />
   <remove-project name="platform/build/soong" />
+  <remove-project name="platform/external/ebtables" />
   <remove-project name="platform/external/littlemock" />
   <remove-project name="platform/external/mksh" />
   <remove-project name="platform/external/toybox" />
   <remove-project name="platform/frameworks/av" />
   <remove-project name="platform/frameworks/base" />
   <remove-project name="platform/frameworks/native" />
+  <remove-project name="platform/frameworks/opt/net/wifi" />
+  <remove-project name="platform/frameworks/opt/telephony" />
   <remove-project name="platform/hardware/qcom/audio" />
   <remove-project name="platform/hardware/qcom/bt" />
   <remove-project name="platform/hardware/qcom/camera" />
@@ -29,7 +32,11 @@
   <remove-project name="platform/packages/apps/Messaging" />
   <remove-project name="platform/packages/apps/MusicFX" />
   <remove-project name="platform/packages/apps/Settings" />
+  <remove-project name="platform/packages/services/Telecomm" />
+  <remove-project name="platform/packages/services/Telephony" />
   <remove-project name="platform/system/core" />
+  <remove-project name="platform/system/hwservicemanager" />
+  <remove-project name="platform/system/libhidl" />
   <remove-project name="platform/system/sepolicy" />
   <remove-project name="platform/system/vold" />
 
@@ -78,7 +85,7 @@
 
   <!-- Device specific repos -->
   <project name="YumeMichi/device_oneplus_onyx" path="device/oneplus/onyx" remote="github" />
-  <project name="YumeMichi/kernel_oneplus_onyx" path="kernel/oneplus/onyx" remote="github" revision="sdcardfs" />
+  <project name="YumeMichi/kernel_oneplus_onyx" path="kernel/oneplus/onyx" remote="github" revision="o-mr1-new" />
   <project name="YumeMichi/proprietary_vendor_oneplus" path="vendor/oneplus" remote="github" />
   <project name="sultanxda/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="github" revision="cm-13.0" />
 
@@ -108,6 +115,16 @@
   <project name="omnirom/android_packages_apps_OmniClock" path="packages/apps/OmniClock" remote="github" revision="android-8.1" />
   <project name="omnirom/android_packages_apps_OmniSwitch" path="packages/apps/OmniSwitch" remote="github" revision="android-8.1" />
   <project name="omnirom/android_packages_apps_Phonograph" path="packages/apps/Phonograph" remote="github" revision="android-8.1" />
+
+  <!-- DirtyUnicorns repos -->
+  <project name="DirtyUnicorns/android_external_ebtables" path="external/ebtables" remote="github" revision="o8x-caf" />
+  <project name="DirtyUnicorns/android_frameworks_opt_net_wifi" path="frameworks/opt/net/wifi" remote="github" revision="o8x-caf" />
+  <project name="DirtyUnicorns/android_frameworks_opt_telephony" path="frameworks/opt/telephony" remote="github" revision="o8x-caf" />
+  <project name="DirtyUnicorns/android_packages_services_Telecomm" path="packages/services/Telecomm" remote="github" revision="o8x-caf" />
+  <project name="DirtyUnicorns/android_packages_services_Telephony" path="packages/services/Telephony" remote="github" revision="o8x-caf" />
+  <project name="DirtyUnicorns/android_system_hwservicemanager" path="system/hwservicemanager" remote="github" revision="o8x-caf" />
+  <project name="DirtyUnicorns/android_system_libhidl" path="system/libhidl" remote="github" revision="o8x-caf" />
+  <project name="DirtyUnicorns/android_vendor_codeaurora_telephony" path="vendor/codeaurora/telephony" remote="github" revision="o8x-caf" />
 
   <!-- Repos to remove -->
   <remove-project name="device/asus/fugu" />
