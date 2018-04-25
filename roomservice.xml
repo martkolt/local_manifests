@@ -13,6 +13,7 @@
   <remove-project name="platform/development" />
   <remove-project name="platform/external/chromium-webview" />
   <remove-project name="platform/external/f2fs-tools" />
+  <remove-project name="platform/external/libtextclassifier" />
   <remove-project name="platform/external/mksh" />
   <remove-project name="platform/external/selinux" />
   <remove-project name="platform/external/tinycompress" />
@@ -22,7 +23,6 @@
   <remove-project name="platform/frameworks/native" />
   <remove-project name="platform/frameworks/opt/net/wifi" />
   <remove-project name="platform/frameworks/opt/telephony" />
-  <!-- <remove-project name="platform/hardware/interfaces" /> -->
   <remove-project name="platform/hardware/libhardware" />
   <remove-project name="platform/hardware/libhardware_legacy" />
   <remove-project name="platform/hardware/qcom/audio" />
@@ -60,15 +60,24 @@
   <remove-project name="platform/packages/apps/Terminal" />
   <remove-project name="platform/packages/apps/WallpaperPicker" />
   <remove-project name="platform/packages/inputmethods/LatinIME" />
+  <remove-project name="platform/packages/providers/BookmarkProvider" />
+  <remove-project name="platform/packages/providers/CalendarProvider" />
+  <remove-project name="platform/packages/providers/CallLogProvider" />
+  <remove-project name="platform/packages/providers/ContactsProvider" />
   <remove-project name="platform/packages/providers/DownloadProvider" />
   <remove-project name="platform/packages/providers/MediaProvider" />
+  <remove-project name="platform/packages/providers/TelephonyProvider" />
+  <remove-project name="platform/packages/services/Mms" />
   <remove-project name="platform/packages/services/Telecomm" />
   <remove-project name="platform/packages/services/Telephony" />
+  <remove-project name="platform/packages/wallpapers/LivePicker" />
   <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />
   <remove-project name="platform/system/bt" />
   <remove-project name="platform/system/core" />
   <remove-project name="platform/system/extras" />
   <remove-project name="platform/system/sepolicy" />
+  <remove-project name="platform/system/tools/aidl" />
+  <remove-project name="platform/system/tools/hidl" />
   <remove-project name="platform/system/vold" />
 
   <!-- Oreo-onyx repos -->
@@ -91,22 +100,23 @@
   </project>
   <project name="Oreo-onyx/frameworks_base" path="frameworks/base" remote="github" />
   <project name="Oreo-onyx/frameworks_native" path="frameworks/native" remote="github" />
-  <project name="Oreo-onyx/hardware_qcom_power" path="hardware/qcom/power" remote="github" revision="o-mr1" />
+  <project name="Oreo-onyx/hardware_qcom_power" path="hardware/qcom/power" remote="github" />
+  <project name="Oreo-onyx/packages_apps_Dialer" path="packages/apps/Dialer" remote="github" />
   <project name="Oreo-onyx/packages_apps_OmniGears" path="packages/apps/OmniGears" remote="github" />
   <project name="Oreo-onyx/packages_apps_Settings" path="packages/apps/Settings" remote="github" />
-  <project name="Oreo-onyx/packages_apps_SlimOTA" path="packages/apps/SlimOTA" remote="github" revision="o2" />
-  <project name="Oreo-onyx/packages_apps_Snap" path="packages/apps/Snap" remote="github" revision="lineage-15.1" />
-  <project name="Oreo-onyx/system_core" path="system/core" remote="github" revision="o-mr1-rebase"   />
-  <project name="Oreo-onyx/system_vold" path="system/vold" remote="github" revision="o-mr1-rebase" />
+  <project name="Oreo-onyx/packages_apps_Updater" path="packages/apps/Updater" remote="github" />
+  <project name="Oreo-onyx/packages_apps_Snap" path="packages/apps/Snap" remote="github" />
+  <project name="Oreo-onyx/system_core" path="system/core" remote="github" />
+  <project name="Oreo-onyx/system_sepolicy" path="system/sepolicy" remote="github" />
+  <project name="Oreo-onyx/system_vold" path="system/vold" remote="github" />
 
   <!-- Camera HAL1 repos -->
-  <project name="Oreo-onyx/frameworks_av" path="frameworks/av" remote="github" revision="o-mr1-hal1" />
-  <!-- <project name="Oreo-onyx/hardware_interfaces" path="hardware/interfaces" remote="github" revision="o-mr1-hal1" /> -->
+  <project name="Oreo-onyx/frameworks_av" path="frameworks/av" remote="github" revision="o-mr1" />
 
   <!-- Device specific repos -->
-  <project name="YumeMichi/device_oneplus_onyx" path="device/oneplus/onyx" remote="github" revision="o-mr1-hal1" />
-  <project name="YumeMichi/kernel_oneplus_onyx" path="kernel/oneplus/onyx" remote="github" revision="o-mr1-rebase" />
-  <project name="YumeMichi/proprietary_vendor_oneplus" path="vendor/oneplus" remote="github" revision="o-mr1-hal1" />
+  <project name="YumeMichi/device_oneplus_onyx" path="device/oneplus/onyx" remote="github" revision="o-mr1-oss" />
+  <project name="YumeMichi/kernel_oneplus_onyx" path="kernel/oneplus/onyx" remote="github" revision="o-mr1" />
+  <project name="YumeMichi/proprietary_vendor_oneplus" path="vendor/oneplus" remote="github" revision="o-mr1-oss" />
 
   <!-- LineageOS repos -->
   <project name="LineageOS/android_build_kati" path="build/kati" remote="github" revision="lineage-15.1" />
@@ -123,6 +133,7 @@
   <project name="LineageOS/android_external_fuse" path="external/fuse" remote="github" revision="lineage-15.1" />
   <project name="LineageOS/android_external_htop" path="external/htop" remote="github" revision="lineage-15.1" />
   <project name="LineageOS/android_external_libncurses" path="external/libncurses" remote="github" revision="lineage-15.1" />
+  <project name="LineageOS/android_external_libtextclassifier" path="external/libtextclassifier" remote="github" revision="lineage-15.1" />
   <project name="LineageOS/android_external_ntfs-3g" path="external/ntfs-3g" remote="github" revision="lineage-15.1" />
   <project name="LineageOS/android_external_p7zip" path="external/p7zip" remote="github" revision="lineage-15.1" />
   <project name="LineageOS/android_external_selinux" path="external/selinux" remote="github" revision="lineage-15.1" />
@@ -150,7 +161,6 @@
   <project name="LineageOS/android_packages_apps_CellBroadcastReceiver" path="packages/apps/CellBroadcastReceiver" remote="github" revision="lineage-15.1" />
   <project name="LineageOS/android_packages_apps_CertInstaller" path="packages/apps/CertInstaller" remote="github" revision="lineage-15.1" />
   <project name="LineageOS/android_packages_apps_Contacts" path="packages/apps/Contacts" remote="github" revision="lineage-15.1" />
-  <project name="LineageOS/android_packages_apps_Dialer" path="packages/apps/Dialer" remote="github" revision="lineage-15.1" />
   <project name="LineageOS/android_packages_apps_DocumentsUI" path="packages/apps/DocumentsUI" remote="github" revision="lineage-15.1" />
   <project name="LineageOS/android_packages_apps_Eleven" path="packages/apps/Eleven" remote="github" revision="lineage-15.1" />
   <project name="LineageOS/android_packages_apps_Email" path="packages/apps/Email" remote="github" revision="lineage-15.1" />
@@ -169,24 +179,36 @@
   <project name="LineageOS/android_packages_apps_StorageManager" path="packages/apps/StorageManager" remote="github" revision="lineage-15.1" />
   <project name="LineageOS/android_packages_apps_Tag" path="packages/apps/Tag" remote="github" revision="lineage-15.1" />
   <project name="LineageOS/android_packages_apps_Terminal" path="packages/apps/Terminal" remote="github" revision="lineage-15.1" />
+  <project name="LineageOS/android_packages_apps_Trebuchet" path="packages/apps/Trebuchet" remote="github" revision="lineage-15.1" />
   <project name="LineageOS/android_packages_apps_WallpaperPicker" path="packages/apps/WallpaperPicker" remote="github" revision="lineage-15.1" />
   <project name="LineageOS/android_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" remote="github" revision="lineage-15.1" />
+  <project name="LineageOS/android_packages_providers_CalendarProvider" path="packages/providers/CalendarProvider" remote="github" revision="lineage-15.1" />
+  <project name="LineageOS/android_packages_providers_CallLogProvider" path="packages/providers/CallLogProvider" remote="github" revision="lineage-15.1" />
+  <project name="LineageOS/android_packages_providers_ContactsProvider" path="packages/providers/ContactsProvider" remote="github" revision="lineage-15.1" />
+  <project name="LineageOS/android_packages_providers_BookmarkProvider" path="packages/providers/BookmarkProvider" remote="github" revision="lineage-15.1" />
   <project name="LineageOS/android_packages_providers_DownloadProvider" path="packages/providers/DownloadProvider" remote="github" revision="lineage-15.1" />
   <project name="LineageOS/android_packages_providers_MediaProvider" path="packages/providers/MediaProvider" remote="github" revision="lineage-15.1" />
+  <project name="LineageOS/android_packages_providers_TelephonyProvider" path="packages/providers/TelephonyProvider" remote="github" revision="lineage-15.1" />
+  <project name="LineageOS/android_packages_services_Mms" path="packages/services/Mms" remote="github" revision="lineage-15.1" />
   <project name="LineageOS/android_packages_services_Telecomm" path="packages/services/Telecomm" remote="github" revision="lineage-15.1" />
   <project name="LineageOS/android_packages_services_Telephony" path="packages/services/Telephony" remote="github" revision="lineage-15.1" />
+  <project name="LineageOS/android_packages_wallpapers_LivePicker" path="packages/wallpapers/LivePicker" remote="github" revision="lineage-15.1" />
   <project name="LineageOS/android_system_bt" path="system/bt" remote="github" revision="lineage-15.1" />
   <project name="LineageOS/android_system_extras" path="system/extras" remote="github" revision="lineage-15.1" />
-  <project name="LineageOS/android_system_sepolicy" path="system/sepolicy" remote="github" revision="lineage-15.1" />
+  <project name="LineageOS/android_system_tools_aidl" path="system/tools/aidl" remote="github" revision="lineage-15.1" />
+  <project name="LineageOS/android_system_tools_hidl" path="system/tools/hidl" remote="github" revision="lineage-15.1" />
   <project name="LineageOS/android_vendor_codeaurora_telephony" path="vendor/codeaurora/telephony" remote="github" revision="lineage-15.1" />
   <project name="LineageOS/android_vendor_qcom_opensource_dataservices" path="vendor/qcom/opensource/dataservices" remote="github" revision="lineage-15.1" />
-  <!-- <project name="LineageOS/android_vendor_qcom_opensource_interfaces" path="vendor/qcom/opensource/interfaces" remote="github" revision="lineage-15.1" /> -->
 
   <!-- OmniROM repos -->
   <project name="omnirom/android_external_mksh" path="external/mksh" remote="github" revision="android-8.1" />
   <project name="omnirom/android_external_toybox" path="external/toybox" remote="github" revision="android-8.1" />
   <project name="omnirom/android_packages_apps_OmniClock" path="packages/apps/OmniClock" remote="github" revision="android-8.1" />
   <project name="omnirom/android_packages_apps_OmniSwitch" path="packages/apps/OmniSwitch" remote="github" revision="android-8.1" />
+  <project name="omnirom/android_packages_services_OmniJaws" path="packages/services/OmniJaws" remote="github" revision="android-8.1" />
+
+  <!-- SDCLANG -->
+  <project name="Oreo-onyx/vendor_qcom_sdclang" path="vendor/qcom/sdclang" remote="github" />
 
   <!-- Uber TC -->
   <project name="SlimSaber/uber_arm-androideabi-4.9-cortex-a15" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" remote="github" revision="master" />
